@@ -1,4 +1,11 @@
 <h1>Note</h1>
-<h4><%= @note.body %></h4>
+
+ <div class="card-container">
+    <div class="card">
+     <div class="card-body">
+      <h4><%= @note.body %></h4>
+    </div>
+  </div>
+</div>
 <%= link_to 'Back', notes_path %>
 
