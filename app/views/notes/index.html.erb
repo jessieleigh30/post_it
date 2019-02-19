@@ -1,4 +1,4 @@
-<h1 class='header'> Notes </h1>
+<h1 class='header'> Post- It Notes </h1>
 
 <div class ="button">
 <%= link_to 'Add New', new_note_path%>
@@ -9,8 +9,7 @@
     <div class = "card">
       <div class = "card-body">
         <p><%= note.body %></p>
-        <%= link_to 'Show', note_path(note) %>
-        <%= link_to 'Edit', edit_note_path(note)%>
+        <%= link_to 'View', note_path(note) %>
         <%= link_to 'Delete', note, method: :delete %>
       </div>
     </div>

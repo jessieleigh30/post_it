@@ -1,9 +1,19 @@
-<h1>Edit Note</h1>
+<h1 class = "header">Edit Note</h1>
+<div class="card-container">
+  <div class="card">
+    <div class = "card-body">
+    <%= form_for @note do |f| %>
 
-<%= form_for @note do |f| %>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
+    
+      <%= f.submit %>
+      </div>
+    </div>
+  </div>
 
-  <%= f.submit %>
-  <% end %>
+  <div class="button">
+    <%= link_to 'Back', notes_path %>
+  </div>
+<% end %>

@@ -1,8 +1,19 @@
-<h1>New notes</h1>
-<%= form_for @note do |f| %>
+<h1 class = "header">New notes</h1>
+<div class="card-container">
+  <div class="card">
+    <div class = "card-body">
+    <%= form_for @note do |f| %>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
 
-  <%= f.submit %>
+    
+      <%= f.submit %>
+      </div>
+    </div>
+  </div>
+
+  <div class="button">
+    <%= link_to 'Back', notes_path %>
+  </div>
 <% end %>
